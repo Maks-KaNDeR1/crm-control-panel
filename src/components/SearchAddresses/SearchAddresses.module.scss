@@ -1,0 +1,162 @@
+.adressBlock {
+  grid-area: c;
+
+  padding: 1px 32px;
+  box-shadow: inset 0px 0px 3px 1px rgb(0 20 120 / 15%);
+  height: 948px;
+
+  .error {
+    position: absolute;
+    color: red;
+    font-size: large;
+    margin-top: -6px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    margin: 32px 0 16px 0;
+  }
+
+  h3 {
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .searchBlock {
+
+    input {
+      outline: none;
+      width: 835px;
+      height: 70px;
+      left: 332px;
+      top: 208px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      padding: 0 24px;
+      border: 3px solid #4F27BF;
+      border-radius: 10px;
+      margin: 24px 24px 24px 0;
+
+    }
+
+    button {
+      position: relative;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      width: 217px;
+      height: 70px;
+      border-bottom: #4F27BF 3px solid;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 32px;
+      padding: 17px;
+      padding-left: 74px;
+      transition: all .3s;
+
+      color: #FFF;
+      background: #4F27BF;
+      border-radius: 10px;
+
+      &:hover {
+        background: #4604ec;
+      }
+
+      .icon {
+        position: absolute;
+        left: 40px;
+
+        img {
+          color: #FFF;
+
+        }
+      }
+    }
+
+    .disabledBut {
+      opacity: 0.7;
+    }
+  }
+
+  .foundBlock {
+    border-radius: 9px;
+
+    box-shadow: 0px 2px 5px 3px rgb(0 20 120 / 15%);
+
+    .foundItems {
+
+      overflow-y: auto;
+      height: 636px;
+
+      &::-webkit-scrollbar {
+        background-color: #fff;
+        width: 5px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #4F27BF;
+        border-radius: 9em;
+      }
+
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #4604ec;
+      }
+
+
+    }
+
+    h1 {
+      padding: 16px 0;
+      margin: 0 24px;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 32px;
+    }
+
+    .found {
+      padding: 16px 0;
+      margin: 0 24px;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      border-top: 1px solid #dbdbdb8a;
+    }
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .adressBlock {
+    height: 1028px;
+    .searchBlock {
+      input {
+        width: 617px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .adressBlock {
+    width: 100%;
+    height: 1390px;
+
+    .searchBlock {
+      input {
+        width: 100%;
+      }
+
+      button {
+        width: 207px;
+        height: 56px;
+        padding: 9px;
+        padding-left: 54px;
+      }
+    }
+  }
+}

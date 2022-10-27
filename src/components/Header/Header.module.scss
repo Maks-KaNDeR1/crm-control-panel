@@ -1,0 +1,89 @@
+.header {
+  display: grid;
+  grid-area: h;
+  grid-template-columns: 1092px 282px;
+  grid-template-rows: 34px;
+
+  
+  top: 0;
+  margin: 0 auto ;
+  position: fixed;
+  min-height: 80px;
+  background: #4F27BF;
+  color: #fff;
+  padding: 16px 32px;
+  transition: .5s;
+
+  &__icon {
+    cursor: pointer;
+    height: 48px;
+    width: 48px;
+
+    img {
+      transition: all .3s;
+
+      &:hover {
+        transform: scale(1.08);
+        transition: all .3s;
+      }
+    }
+  }
+
+  .headright {
+    .header__icon {
+      img {
+        margin-top: -7px;
+      }
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 28px;
+    left: 104px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+
+  &__name {
+    position: absolute;
+    right: 32px;
+    top: 28px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    width: 704px;
+    grid-template-columns: 362px 343px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .header {
+    margin: 0;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+
+    
+    .headright {
+      .header__icon {
+        img {
+          margin-top: 0;
+          margin-left: -14px;
+        }
+      }
+    }
+
+    &__name {
+      left: 104px;
+      top: 61%;
+    }
+  }
+}
