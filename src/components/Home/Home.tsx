@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Home.module.scss'
 
-const Home = () => {
+export const Home = () => {
     return (
         <div className={s.homeBlock} >
             <h1> Новости</h1>
@@ -38,5 +38,3 @@ const Home = () => {
         </div>
     )
 }
-
-export default Home

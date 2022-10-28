@@ -36,6 +36,9 @@ body {
   .app-wrapper {
     margin: 0 ;
     width: 100%;
+// height: 80%;
+
+min-height: 100%;
 
     grid-template-areas:  "h c" "c c";
     grid-template-rows: 140px;

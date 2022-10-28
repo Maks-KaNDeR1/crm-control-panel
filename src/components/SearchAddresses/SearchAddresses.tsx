@@ -10,7 +10,6 @@ type PropsType = {
 
 export const SearchAddresses: React.FC<PropsType> = ({ mobile }) => {
 
-
     const [value, setValue] = useState('')
     const [items, setItems] = useState<ItemType[]>()
     const [loading, setLoading] = useState(false)

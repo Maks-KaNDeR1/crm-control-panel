@@ -12,7 +12,7 @@ import angleUp from '../../assets/images/angleUp.svg'
 import settingProfile from '../../assets/images/setting-profile.svg'
 import managmentFin from '../../assets/images/managment-fin.svg'
 
-function Navbar() {
+export const Navbar = () => {
 
     const [settingShow, setSettingShow] = useState(true)
     const [active, setActive] = useState('h')
@@ -131,6 +131,3 @@ function Navbar() {
     )
 }
 
-
-
-export default Navbar

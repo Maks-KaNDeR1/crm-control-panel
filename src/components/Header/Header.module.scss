@@ -71,7 +71,10 @@
     grid-template-columns: 100%;
     grid-template-rows: 50% 50%;
 
+    min-height: 14vh;
     
+  position: relative;
+
     .headright {
       .header__icon {
         img {

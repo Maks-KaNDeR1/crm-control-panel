@@ -8,7 +8,7 @@ type PropsType = {
     lastName: string
 }
 
-const Header: React.FC<PropsType> = ({ name, lastName }) => {
+export const Header: React.FC<PropsType> = ({ name, lastName }) => {
 
     return <header className={s.header}>
         <div className={s.headleft}>
@@ -19,7 +19,10 @@ const Header: React.FC<PropsType> = ({ name, lastName }) => {
         </div>
         <div className={s.headright}>
             <span className={s.header__icon}>
-                <img src={profile} alt="" />
+
+                <a target="_blank" rel="noreferrer" href="https://t.me/Maks_KaNDeR">
+                    <img src={profile} alt="" />
+                </a>
             </span>
             <span className={s.header__name} >
                 {name} {lastName}
@@ -28,5 +31,3 @@ const Header: React.FC<PropsType> = ({ name, lastName }) => {
     </header>
 
 }
-
-export default Header
