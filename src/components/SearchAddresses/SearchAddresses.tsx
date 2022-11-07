@@ -5,10 +5,9 @@ import search from '../../assets/images/search.svg'
 import { ItemType } from '../../api/types'
 
 type PropsType = {
-    mobile: boolean
 }
 
-export const SearchAddresses: React.FC<PropsType> = ({ mobile }) => {
+export const SearchAddresses: React.FC<PropsType> = () => {
 
     const [value, setValue] = useState('')
     const [items, setItems] = useState<ItemType[]>()
